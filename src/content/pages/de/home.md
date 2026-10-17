@@ -6,7 +6,7 @@ heroEyebrow: "AMP · Qualitätssicherung"
 heroTitlePrefix: "Ihr Partner für"
 heroTitleHighlight: "zerstörungsfreie Werkstoffprüfung."
 heroText: "Moderne Prüftechnik, umfassendes Know-how und persönliche Betreuung für anspruchsvolle industrielle Prüfaufgaben."
-heroImage: "../../../assets/images/hero-image.jpg"
+heroImage: "../../../assets/images/SCHWARZ-Reverse-Engineering-Standbild-19-scaled.jpg"
 heroImageLabel: "Werkstoffprüfung im Einsatz"
 
 showcaseImage: "../../../assets/images/know-how_01.jpg"

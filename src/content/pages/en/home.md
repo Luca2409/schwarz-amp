@@ -6,7 +6,7 @@ heroEyebrow: "AMP · Quality Assurance"
 heroTitlePrefix: "Your partner for"
 heroTitleHighlight: "non-destructive testing."
 heroText: "Advanced testing technology, extensive expertise, and dedicated support for demanding industrial inspection tasks."
-heroImage: "../../../assets/images/hero-image.jpg"
+heroImage: "../../../assets/images/SCHWARZ-Reverse-Engineering-Standbild-19-scaled.jpg"
 heroImageLabel: "Material testing in practice"
 
 showcaseImage: "../../../assets/images/know-how_01.jpg"
