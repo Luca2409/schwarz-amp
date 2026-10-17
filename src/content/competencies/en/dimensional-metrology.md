@@ -6,6 +6,8 @@ teaser: "Laser-based precision measurement for industrial applications."
 order: 2
 seoTitle: "Contract Measurement with FARO Laser Tracker & FaroArm | AMP"
 seoDescription: "Precise 3D measurement of components, machinery and industrial systems with FARO Laser Tracker and FaroArm – accuracy up to 0.03 mm, at our facility or on site."
+heroImage: "../../../assets/images/SCHWARZ-Reverse-Engineering-Standbild-44-scaled.jpg"
+heroImageAlt: "Technician measuring a metal component with an optical 3D scanner, seen through an opening in the part"
 ---
 
 ## Precision for Your Product – Contract Measurement Services
