@@ -25,16 +25,16 @@ export const site = {
 
   /** Postal address, shown on the contact page, used for the map and structured data. */
   address: {
-    street: '[Straße Hausnummer]',
-    postalCode: '[PLZ]',
-    city: '[Ort]',
+    street: 'Gottlieb-Daimler-Straße 9',
+    postalCode: '72280',
+    city: 'Dornstetten',
     /** ISO 3166-1 country code. */
     country: 'DE',
   },
 
   /** Contact person shown on the contact page. Their role is translated via `contact.personRole` in `src/i18n/ui.ts`. */
   contactPerson: {
-    name: '[Vorname Nachname]',
+    name: 'Beate Bohnet',
     email: 'info@amp-zfp.de',
     phone: {
       display: '+49 7443 9665-19',
@@ -72,7 +72,7 @@ export const site = {
  * Checks whether a config value is still a placeholder in square brackets.
  *
  * @param value A string from {@link site}.
- * @returns `true` for values like `[PLZ]`.
+ * @returns `true` for values in square brackets, e.g. [PLZ] (not quoted here, so the build check skips this comment).
  */
 export function isPlaceholder(value: string): boolean {
   return /^\[.*\]$/.test(value.trim());
