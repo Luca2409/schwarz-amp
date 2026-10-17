@@ -1,6 +1,6 @@
 # AMP – Website
 
-Bilingual (German/English) company website for AMP Prüftechnik, built with [Astro](https://docs.astro.build/) as a static site and deployed to GitHub Pages.
+Bilingual (German/English) company website for AMP GmbH, built with [Astro](https://docs.astro.build/) as a static site and deployed to GitHub Pages.
 
 - **Live:** https://luca2409.github.io/schwarz-amp-industrial/
 - **Stack:** Astro 6, TypeScript, Markdown content collections, `astro:assets` image optimization, `@astrojs/sitemap`, Inter via Fontsource (self-hosted)

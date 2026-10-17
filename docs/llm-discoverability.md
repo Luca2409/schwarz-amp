@@ -20,7 +20,7 @@ Follows the proposal at [llmstxt.org](https://llmstxt.org): a Markdown file at t
 Structure:
 
 ```markdown
-# AMP Prüftechnik
+# AMP GmbH
 
 > One-paragraph summary: who AMP is, where, what it offers.
 

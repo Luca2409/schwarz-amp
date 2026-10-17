@@ -1,7 +1,7 @@
 ---
 translationKey: "legal-notice"
 title: "Impressum"
-description: "Impressum und Anbieterkennzeichnung von AMP Prüftechnik."
+description: "Impressum und Anbieterkennzeichnung der AMP GmbH."
 order: 1
 ---
 
@@ -18,7 +18,7 @@ Deutschland
 
 ## Kontakt
 
-Telefon: +49 7443 9665-51  
+Telefon: +49 7443 9665-19  
 Telefax: +49 7443 9665-54  
 E-Mail: [info@amp-zfp.de](mailto:info@amp-zfp.de)
 

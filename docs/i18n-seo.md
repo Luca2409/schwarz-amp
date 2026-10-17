@@ -301,7 +301,7 @@ Each competency page ends with a "related" section (`CompetenciesSection` with `
 
 Content images live in `src/assets/images/` and are referenced from frontmatter with paths relative to the Markdown file. The schema validates them with `image()`, and `Hero.astro` renders them with `<Image>` from `astro:assets`, which generates WebP files in several widths with `srcset`/`sizes`.
 
-Name files after where they're used: `<page>-hero.jpg` for banner images (`home-hero.jpg`, `contact-hero.jpg`, `certificates-hero.jpg`, `dimensional-metrology-hero.jpg`), `home-about.jpg` and `home-quality.jpg` for the background photos of the home page about and quality sections. `non-destructive-testing-hero.jpg` is also the default social preview image (`BaseLayout.astro`).
+Name files after where they're used: `<page>-hero.jpg` for banner images (`home-hero.jpg`, `contact-hero.jpg`, `certificates-hero.jpg`, `dimensional-metrology-hero.jpg`), `home-about.jpg` and `home-quality.jpg` for the background photos of the home page about and quality sections. `home-hero.jpg` is also the default social preview image (`BaseLayout.astro`).
 
 Files in `public/` are served unprocessed; only use it for files that need a fixed URL (favicon, logo for structured data).
 
@@ -329,7 +329,7 @@ The page is `noindex` and returns HTTP 404. Footer ids carry the language (`foot
 ```ts
 export const site = {
   name: 'AMP',
-  company: 'AMP Prüftechnik',
+  company: 'AMP GmbH',
   email: 'info@amp-zfp.de',
   phone: { display: '+49 7443 9665-19', href: 'tel:+497443966519' },
   logo: '/images/logo-amp.png',

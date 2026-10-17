@@ -46,7 +46,7 @@ const legalLinks = (await getLegalPages(lang)).map((entry) => ({
     </div>
   </div>
   <div class="site-footer__bottom">
-    <span>{site.company}</span>
+    <span>© {new Date().getFullYear()} {site.company}</span>
     {legalLinks.length > 0 ? (
       <nav class="site-footer__legal" aria-label={t('footer.legalLabel')}>
         {legalLinks.map((link) => <a href={link.href}>{link.label}</a>)}

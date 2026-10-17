@@ -943,8 +943,8 @@ summary:focus-visible {
 }
 
 .site-footer__heading {
-    color: #666;
-    font-size: 9px;
+    color: #8a8a8a;
+    font-size: 10px;
     font-weight: 750;
     letter-spacing: .14em;
     text-transform: uppercase;
@@ -972,8 +972,8 @@ summary:focus-visible {
     justify-content: space-between;
     gap: 24px;
     border-top: 1px solid rgba(255, 255, 255, .12);
-    color: #666;
-    font-size: 9px;
+    color: #8a8a8a;
+    font-size: 10px;
     font-weight: 750;
     letter-spacing: .14em;
     text-transform: uppercase;

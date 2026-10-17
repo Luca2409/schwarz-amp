@@ -1,7 +1,7 @@
 ---
 translationKey: "legal-notice"
 title: "Legal Notice"
-description: "Legal notice and provider identification of AMP Prüftechnik."
+description: "Legal notice and provider identification of AMP GmbH."
 order: 1
 ---
 
@@ -18,7 +18,7 @@ Germany
 
 ## Contact
 
-Phone: +49 7443 9665-51  
+Phone: +49 7443 9665-19  
 Fax: +49 7443 9665-54  
 Email: [info@amp-zfp.de](mailto:info@amp-zfp.de)
 

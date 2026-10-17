@@ -1,7 +1,7 @@
 ---
 translationKey: "privacy-policy"
 title: "Privacy Policy"
-description: "Information on how AMP Prüftechnik processes personal data on this website."
+description: "Information on how AMP GmbH processes personal data on this website."
 order: 2
 ---
 

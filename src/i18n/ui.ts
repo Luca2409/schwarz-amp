@@ -31,7 +31,7 @@ const de = {
   'nav.certificates': 'Zertifikate',
 
   'certificates.metaTitle': 'Zertifikate – ISO 9001 und DGZfP | AMP',
-  'certificates.metaDescription': 'Zertifikate und Mitgliedschaften von AMP Prüftechnik: Qualitätsmanagement nach ISO 9001 und Mitgliedschaft in der Deutschen Gesellschaft für Zerstörungsfreie Prüfung (DGZfP).',
+  'certificates.metaDescription': 'Zertifikate und Mitgliedschaften der AMP GmbH: Qualitätsmanagement nach ISO 9001 und Mitgliedschaft in der Deutschen Gesellschaft für Zerstörungsfreie Prüfung (DGZfP).',
   'certificates.eyebrow': 'Zertifikate',
   'certificates.title': 'Alles nach internationalen Standards.',
   'certificates.intro': 'AMP erfüllt weltweite Anforderungen an Schweißbefähigungen und Qualitätszertifizierungen nach internationalen Standards.',
@@ -55,7 +55,7 @@ const de = {
   'competency.relatedTitle': 'Mehr aus unserem Leistungsspektrum.',
 
   'contact.metaTitle': 'Kontakt – Prüfaufgabe anfragen | AMP',
-  'contact.metaDescription': 'Kontakt zu AMP Prüftechnik: Anfrage zu zerstörungsfreier Werkstoffprüfung, Vermessung oder Inspektionen per Formular, E-Mail oder Telefon.',
+  'contact.metaDescription': 'Kontakt zur AMP GmbH: Anfrage zu zerstörungsfreier Werkstoffprüfung, Vermessung oder Inspektionen per Formular, E-Mail oder Telefon.',
   'contact.eyebrow': 'Kontakt',
   'contact.title': 'Sprechen Sie uns an.',
   'contact.intro': 'Beschreiben Sie uns Ihre Prüfaufgabe – wir melden uns schnellstmöglich bei Ihnen.',
@@ -90,7 +90,7 @@ const de = {
   'contact.map.iframeTitle': 'Standort von AMP auf Google Maps',
 
   'seo.defaultDescription': 'AMP – Zerstörungsfreie Werkstoffprüfung',
-  'seo.imageAlt': 'AMP Prüftechnik im industriellen Einsatz',
+  'seo.imageAlt': 'AMP GmbH: 3D-Messtechnik im industriellen Einsatz',
 } as const;
 
 type UiStrings = Record<keyof typeof de, string>;
@@ -121,7 +121,7 @@ const en = {
   'nav.certificates': 'Certificates',
 
   'certificates.metaTitle': 'Certificates – ISO 9001 and DGZfP | AMP',
-  'certificates.metaDescription': 'Certificates and memberships of AMP Prüftechnik: quality management to ISO 9001 and membership of the German Society for Non-Destructive Testing (DGZfP).',
+  'certificates.metaDescription': 'Certificates and memberships of AMP GmbH: quality management to ISO 9001 and membership of the German Society for Non-Destructive Testing (DGZfP).',
   'certificates.eyebrow': 'Certificates',
   'certificates.title': 'Everything to international standards.',
   'certificates.intro': 'AMP meets worldwide requirements for welding qualifications and quality certifications to international standards.',
@@ -145,7 +145,7 @@ const en = {
   'competency.relatedTitle': 'Explore our full range of services.',
 
   'contact.metaTitle': 'Contact – Request an Inspection | AMP',
-  'contact.metaDescription': 'Contact AMP Prüftechnik about non-destructive testing, dimensional metrology or inspections via form, email or phone.',
+  'contact.metaDescription': 'Contact AMP GmbH about non-destructive testing, dimensional metrology or inspections via form, email or phone.',
   'contact.eyebrow': 'Contact',
   'contact.title': "Let's talk about your project.",
   'contact.intro': "Tell us about your inspection task – we'll get back to you as soon as possible.",
@@ -180,7 +180,7 @@ const en = {
   'contact.map.iframeTitle': 'AMP location on Google Maps',
 
   'seo.defaultDescription': 'AMP – Non-Destructive Testing',
-  'seo.imageAlt': 'AMP testing technology in industrial use',
+  'seo.imageAlt': 'AMP GmbH: 3D measurement technology in industrial use',
 } as const satisfies UiStrings;
 
 /** UI strings per language; read them with `useTranslations` from `src/i18n/utils.ts`. */

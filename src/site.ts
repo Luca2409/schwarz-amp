@@ -3,7 +3,7 @@ export const site = {
   /** Short brand name, e.g. for `og:site_name`. */
   name: 'AMP',
   /** Company name shown in the footer and structured data. */
-  company: 'AMP Prüftechnik',
+  company: 'AMP GmbH',
   email: 'info@amp-zfp.de',
   phone: {
     /** Human-readable format. */
