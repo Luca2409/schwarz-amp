@@ -37,6 +37,8 @@ const pages = defineCollection({
     qualityTitle: z.string(),
     qualityCardTitle: z.string(),
     qualityCardText: z.string(),
+    qualityImage: image().optional(),
+    qualityImageAlt: z.string().optional(),
 
     contactTitle: z.string(),
     contactLabel: z.string(),

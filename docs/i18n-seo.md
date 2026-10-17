@@ -301,7 +301,7 @@ Each competency page ends with a "related" section (`CompetenciesSection` with `
 
 Content images live in `src/assets/images/` and are referenced from frontmatter with paths relative to the Markdown file. The schema validates them with `image()`, and `Hero.astro` renders them with `<Image>` from `astro:assets`, which generates WebP files in several widths with `srcset`/`sizes`.
 
-Name files after where they're used: `<page>-hero.jpg` for banner images (`home-hero.jpg`, `contact-hero.jpg`, `certificates-hero.jpg`, `dimensional-metrology-hero.jpg`). `non-destructive-testing-hero.jpg` is also the default social preview image (`BaseLayout.astro`).
+Name files after where they're used: `<page>-hero.jpg` for banner images (`home-hero.jpg`, `contact-hero.jpg`, `certificates-hero.jpg`, `dimensional-metrology-hero.jpg`), `home-quality.jpg` for the background of the home page quality section. `non-destructive-testing-hero.jpg` is also the default social preview image (`BaseLayout.astro`).
 
 Files in `public/` are served unprocessed; only use it for files that need a fixed URL (favicon, logo for structured data).
 

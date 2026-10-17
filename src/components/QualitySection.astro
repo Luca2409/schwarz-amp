@@ -1,5 +1,8 @@
 ---
-/** Quality section (`#quality`) with a heading and one highlighted card. */
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+/** Quality section (`#quality`) with a heading and one highlighted card, optionally on a background photo. */
 interface Props {
   /** Small label above the heading. */
   eyebrow: string;
@@ -10,12 +13,25 @@ interface Props {
   cardText: string;
   /** Optional link below the card text, e.g. to the certificates page. */
   link?: { label: string; href: string };
+  /** Optional background photo from `src/assets/`. */
+  image?: ImageMetadata;
+  /** Alt text of the background photo. */
+  imageAlt?: string;
 }
 
-const { eyebrow, title, cardTitle, cardText, link } = Astro.props;
+const { eyebrow, title, cardTitle, cardText, link, image, imageAlt = '' } = Astro.props;
 ---
 
-<section class="quality-section" id="quality">
+<section class:list={['quality-section', { 'quality-section--image': image }]} id="quality">
+  {image && (
+    <Image
+      class="quality-section__image"
+      src={image}
+      alt={imageAlt}
+      widths={[640, 960, 1440, 1920]}
+      sizes="100vw"
+    />
+  )}
   <div class="quality-section__inner">
     <div class="section-heading-block">
       <div class="eyebrow eyebrow--dark">{eyebrow}</div>

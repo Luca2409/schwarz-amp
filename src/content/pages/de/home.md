@@ -36,6 +36,8 @@ qualityEyebrow: "Qualität im Fokus"
 qualityTitle: "Verlässliche Ergebnisse beginnen mit klaren Standards."
 qualityCardTitle: "Qualifiziert. Dokumentiert. Nachvollziehbar."
 qualityCardText: "Von der einzelnen Prüfung bis zur laufenden Qualitätsüberwachung unterstützen wir Sie mit der passenden technischen Lösung."
+qualityImage: "../../../assets/images/home-quality.jpg"
+qualityImageAlt: "Fachkraft mit Haarnetz und Schutzhandschuhen prüft eine Edelstahlarmatur"
 
 contactTitle: "Ihre Prüfaufgabe. Unser Know-how."
 contactLabel: "Jetzt Kontakt aufnehmen"

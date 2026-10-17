@@ -36,6 +36,8 @@ qualityEyebrow: "Quality in Focus"
 qualityTitle: "Reliable results begin with clearly defined standards."
 qualityCardTitle: "Qualified. Documented. Traceable."
 qualityCardText: "From individual inspections to continuous quality monitoring, we provide the right technical solution for your requirements."
+qualityImage: "../../../assets/images/home-quality.jpg"
+qualityImageAlt: "Technician wearing a hairnet and protective gloves inspecting a stainless steel fitting"
 
 contactTitle: "Your inspection task. Our expertise."
 contactLabel: "Get in touch"
