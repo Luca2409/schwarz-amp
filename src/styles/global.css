@@ -1008,6 +1008,42 @@ summary:focus-visible {
     gap: 80px;
 }
 
+/* Contact hero with the team photo as background; the gradient keeps the text readable. */
+.contact-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+
+.contact-hero::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(17, 17, 17, .92) 0%, rgba(17, 17, 17, .7) 45%, rgba(17, 17, 17, .15) 100%);
+    pointer-events: none;
+    content: "";
+}
+
+.contact-hero__inner {
+    position: relative;
+    z-index: 1;
+    min-height: clamp(420px, 40vw, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-hero p {
+    color: #ddd;
+}
+
 .detail-content .markdown-content h2 {
     margin: 0 0 24px;
     color: var(--text);
@@ -1534,6 +1570,9 @@ summary:focus-visible {
     }
     .detail-sidebar {
         position: static;
+    }
+    .contact-hero::after {
+        background: rgba(17, 17, 17, .72);
     }
     .about-section__inner,
     .quality-section {

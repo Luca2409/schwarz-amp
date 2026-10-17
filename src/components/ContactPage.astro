@@ -1,5 +1,6 @@
 ---
 import { getAbsoluteLocaleUrl } from 'astro:i18n';
+import { Image } from 'astro:assets';
 
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header.astro';
@@ -7,6 +8,7 @@ import Footer from '@/components/Footer.astro';
 import JsonLd from '@/components/JsonLd.astro';
 import ContactForm from '@/components/ContactForm.astro';
 import GoogleMap from '@/components/GoogleMap.astro';
+import teamImage from '@/assets/images/contact-us-amp.jpg';
 import type { Lang } from '@/i18n/ui';
 import { getAlternates, getLocalizedPath, useTranslations } from '@/i18n/utils';
 import { getLegalPageLink } from '@/lib/content';
@@ -58,8 +60,17 @@ const { address, contactPerson } = site;
   <Header lang={lang} alternates={alternates} />
 
   <main>
-    <section class="detail-hero">
-      <div class="detail-hero__inner">
+    <section class="detail-hero contact-hero">
+      <Image
+        class="contact-hero__image"
+        src={teamImage}
+        alt={t('contact.imageAlt')}
+        widths={[640, 960, 1440, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="detail-hero__inner contact-hero__inner">
         <div class="eyebrow eyebrow--dark">{t('contact.eyebrow')}</div>
         <h1>{t('contact.title')}</h1>
         <p>{t('contact.intro')}</p>
