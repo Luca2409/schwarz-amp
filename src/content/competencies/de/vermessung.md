@@ -6,7 +6,7 @@ teaser: "Laserbasierte Präzisionsmessung für industrielle Anwendungen."
 order: 2
 seoTitle: "Lohnvermessung mit FARO Laser Tracker & FaroArm | AMP"
 seoDescription: "Präzise 3D-Vermessung von Bauteilen, Maschinen und Anlagen mit FARO Laser Tracker und FaroArm – Genauigkeit bis 0,03 mm, bei uns oder direkt bei Ihnen vor Ort."
-heroImage: "../../../assets/images/SCHWARZ-Reverse-Engineering-Standbild-44-scaled.jpg"
+heroImage: "../../../assets/images/dimensional-metrology-hero.jpg"
 heroImageAlt: "Mitarbeiter vermisst ein Metallbauteil mit einem optischen 3D-Scanner, durch eine Bauteilöffnung fotografiert"
 ---
 

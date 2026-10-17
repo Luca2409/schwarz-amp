@@ -6,7 +6,7 @@ teaser: "Von Schweißnähten bis zu komplexen Bauteilen."
 order: 1
 seoTitle: "Zerstörungsfreie Werkstoffprüfung (RT, UT, PT/MT, VT) | AMP"
 seoDescription: "Röntgen-, Ultraschall-, Riss- und Sichtprüfung nach DIN, EN, ISO und ASME – im Prüfzentrum oder vor Ort. Dazu Dichtheitsprüfung, PMI und Härtemessung."
-heroImage: "../../../assets/images/hero-image.jpg"
+heroImage: "../../../assets/images/non-destructive-testing-hero.jpg"
 heroImageAlt: "Werkstoffprüfung im Einsatz: Mitarbeiter scannt ein Metallbauteil mit einem 3D-Laserscanner"
 ---
 

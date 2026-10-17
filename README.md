@@ -151,7 +151,7 @@ Configured in `src/site.ts` (address, contact person, form service) and `src/i18
 Put content images into `src/assets/images/` and reference them in frontmatter with a path relative to the Markdown file:
 
 ```yaml
-heroImage: "../../../assets/images/hero-image.jpg"
+heroImage: "../../../assets/images/home-hero.jpg"
 ```
 
 Astro converts them to WebP in several sizes at build time. Only files that need a fixed URL (favicon, logo for structured data) belong in `public/`.

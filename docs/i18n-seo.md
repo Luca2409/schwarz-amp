@@ -166,7 +166,7 @@ Helpers in `src/lib/content.ts`:
 
 `src/content/pages/<lang>/home.md` holds all texts of the home page sections (hero, about, showcase, competencies, quality, contact banner) plus `title` and `description` for SEO. The Markdown body is the "about" text. See the `pages` schema in `src/content.config.ts` for the full field list.
 
-- `heroImage` and `showcaseImage` are paths to `src/assets/images/`, relative to the Markdown file (e.g. `../../../assets/images/hero-image.jpg`). See [Images](#images).
+- `heroImage` and `showcaseImage` are paths to `src/assets/images/`, relative to the Markdown file (e.g. `../../../assets/images/home-hero.jpg`). See [Images](#images).
 - The contact banner links to the contact page; there is no link field in the frontmatter.
 - `primaryCtaHref` / `secondaryCtaHref` are anchors on the same page (`#services`, `#contact`).
 
@@ -299,6 +299,8 @@ Each competency page ends with a "related" section (`CompetenciesSection` with `
 ## Images
 
 Content images live in `src/assets/images/` and are referenced from frontmatter with paths relative to the Markdown file. The schema validates them with `image()`, and `Hero.astro` / `ImageShowcase.astro` render them with `<Image>` from `astro:assets`, which generates WebP files in several widths with `srcset`/`sizes`.
+
+Name files after where they're used: `<page>-hero.jpg` for banner images (`home-hero.jpg`, `contact-hero.jpg`, `dimensional-metrology-hero.jpg`), `home-showcase.jpg` for the image below the home page hero. `non-destructive-testing-hero.jpg` is also the default social preview image (`BaseLayout.astro`).
 
 Files in `public/` are served unprocessed; only use it for files that need a fixed URL (favicon, logo for structured data).
 
