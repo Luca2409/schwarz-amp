@@ -1,0 +1,26 @@
+---
+/** Key facts below the hero (certifications, methods), one card per fact. */
+interface Props {
+  /** Small label above the heading. */
+  eyebrow: string;
+  title: string;
+  /** Facts, e.g. `{ value: 'ISO 9001:2015', label: 'Certified quality management' }`. */
+  facts: { value: string; label: string }[];
+}
+
+const { eyebrow, title, facts } = Astro.props;
+---
+
+<section class="facts-section">
+  <div class="eyebrow">{eyebrow}</div>
+  <h2 class="section-heading facts-section__title">{title}</h2>
+
+  <ul class="facts-section__list">
+    {facts.map((fact) => (
+      <li class="fact-card">
+        <strong class="fact-card__value">{fact.value}</strong>
+        <span class="fact-card__label">{fact.label}</span>
+      </li>
+    ))}
+  </ul>
+</section>

@@ -4,7 +4,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
-import ImageShowcase from '@/components/ImageShowcase.astro';
+import FactsSection from '@/components/FactsSection.astro';
 import AboutSection from '@/components/AboutSection.astro';
 import CompetenciesSection from '@/components/CompetenciesSection.astro';
 import QualitySection from '@/components/QualitySection.astro';
@@ -74,7 +74,12 @@ const lastModified = getLastModified(home.filePath, ...competencies.map((entry) 
       primaryHref={home.data.primaryCtaHref}
       secondaryLabel={home.data.secondaryCtaLabel}
       secondaryHref={home.data.secondaryCtaHref}
-      facts={home.data.heroFacts}
+    />
+
+    <FactsSection
+      eyebrow={home.data.factsEyebrow}
+      title={home.data.factsTitle}
+      facts={home.data.facts}
     />
 
     <AboutSection
@@ -83,13 +88,6 @@ const lastModified = getLastModified(home.filePath, ...competencies.map((entry) 
     >
       <Content />
     </AboutSection>
-
-    <ImageShowcase
-      src={home.data.showcaseImage}
-      alt={home.data.showcaseImageAlt}
-      eyebrow={home.data.showcaseEyebrow}
-      caption={home.data.showcaseCaption}
-    />
 
     <CompetenciesSection
       eyebrow={home.data.competenciesEyebrow}

@@ -411,16 +411,21 @@ summary:focus-visible {
    HERO
    ========================================================= */
 
+/* The photo fills the first screen. Headline size and spacing scale with the viewport height,
+   so the text fits on low laptop screens. */
 .hero {
+    min-height: calc(100svh - 88px);
+    display: flex;
+    flex-direction: column;
     background: var(--black);
     color: var(--white);
 }
 
-/* Photo fills the first screen (minus the facts bar); the gradient darkens the left, where the
-   text sits, and fades into the facts bar at the bottom. */
+/* The gradient darkens the left, where the text sits, and the bottom edge. */
 .hero__stage {
     position: relative;
-    min-height: clamp(560px, calc(100svh - 88px - 108px), 860px);
+    flex: 1 0 auto;
+    min-height: 460px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -452,13 +457,13 @@ summary:focus-visible {
     z-index: 1;
     width: min(100%, var(--content-max));
     margin: 0 auto;
-    padding: 120px var(--page-padding) clamp(56px, 6vw, 88px);
+    padding: clamp(48px, 9svh, 120px) var(--page-padding) clamp(40px, 6svh, 88px);
 }
 
 .hero__title {
     max-width: 900px;
     margin: 20px 0 0;
-    font-size: clamp(44px, 5.4vw, 80px);
+    font-size: clamp(40px, min(5.4vw, 7.5svh), 80px);
     line-height: 1.02;
     letter-spacing: -0.03em;
 }
@@ -514,109 +519,53 @@ summary:focus-visible {
     border-color: var(--white);
 }
 
-.hero__facts {
+
+/* =========================================================
+   FACTS
+   ========================================================= */
+
+.facts-section {
     width: min(100%, var(--content-max));
     margin: 0 auto;
-    padding: 0 var(--page-padding);
+    padding: 96px var(--page-padding) 104px;
+}
+
+.facts-section__title {
+    max-width: 760px;
+}
+
+.facts-section__list {
+    margin: 48px 0 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
     list-style: none;
 }
 
-.hero__fact {
-    padding: 28px 24px 30px 0;
+.fact-card {
+    padding: 28px 26px 30px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    border-top: 1px solid rgba(255, 255, 255, .14);
-}
-
-.hero__fact + .hero__fact {
-    padding-left: 24px;
-    border-left: 1px solid rgba(255, 255, 255, .14);
-}
-
-.hero__fact-value {
-    color: var(--yellow);
-    font-size: 17px;
-    font-weight: 800;
-    letter-spacing: -.01em;
-}
-
-.hero__fact-label {
-    color: #aaa;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   IMAGE SHOWCASE
-   ========================================================= */
-
-.image-showcase {
-    width: min(100%, var(--content-max));
-    margin: 0 auto;
-    padding: 52px var(--page-padding) 84px;
-}
-
-.image-showcase__inner {
-    position: relative;
-}
-
-.image-showcase__figure {
-    position: relative;
-    margin: 0;
-    min-height: 300px;
-    overflow: hidden;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--yellow);
     border-radius: var(--radius);
-    border: 1px solid #d5d5d1;
-    background: var(--black);
-    box-shadow: none;
+    background: var(--white);
 }
 
-.image-showcase__image {
-    width: 100%;
-    aspect-ratio: 2.8 / 1;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    filter: grayscale(.28) contrast(1.04);
-}
-
-.image-showcase__figure::after {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, .64) 0%, rgba(0, 0, 0, .22) 48%, rgba(0, 0, 0, .04) 76%);
-    pointer-events: none;
-    content: "";
-}
-
-.image-showcase__caption {
-    position: absolute;
-    z-index: 2;
-    left: 40px;
-    bottom: 38px;
-    max-width: 520px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    color: var(--white);
-}
-
-.image-showcase__eyebrow {
-    color: var(--yellow);
-    font-size: 11px;
+.fact-card__value {
+    color: var(--text);
+    font-size: 22px;
     font-weight: 800;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: -.015em;
 }
 
-.image-showcase__text {
-    font-size: clamp(20px, 2.2vw, 30px);
-    font-weight: 750;
-    line-height: 1.18;
-    letter-spacing: -0.025em;
+.fact-card__label {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.55;
 }
 
 /* Switch to the menu button before the five navigation items get too tight. */
@@ -629,33 +578,6 @@ summary:focus-visible {
     }
 }
 
-@media (max-width: 900px) {
-    .image-showcase {
-        padding-top: 40px;
-        padding-bottom: 56px;
-    }
-    .image-showcase__figure {
-        min-height: 300px;
-    }
-    .image-showcase__image {
-        height: 360px;
-    }
-}
-
-@media (max-width: 560px) {
-    .image-showcase {
-        padding-top: 32px;
-        padding-bottom: 48px;
-    }
-    .image-showcase__caption {
-        right: 24px;
-        bottom: 24px;
-        left: 24px;
-    }
-    .image-showcase__image {
-        height: 300px;
-    }
-}
 
 
 /* =========================================================
@@ -675,7 +597,8 @@ summary:focus-visible {
 
 .about-section {
     margin-top: 0;
-    background: #181818;
+    /* Same as the competencies section that follows, so the two dark sections don't show a step. */
+    background: var(--black);
     color: var(--white);
 }
 
@@ -1524,6 +1447,8 @@ summary:focus-visible {
 
 .hero__title {
     text-transform: none;
+    /* Wrap between words; "zerstörungsfreie" must not be split on wide screens. */
+    hyphens: manual;
 }
 
 .competency-row__number {
@@ -1568,15 +1493,15 @@ summary:focus-visible {
         font-size: 7px;
     }
 
-    .hero__stage {
-        min-height: clamp(520px, calc(100svh - 76px - 160px), 720px);
+    .hero {
+        min-height: calc(100svh - 76px);
     }
-    .hero__facts {
+    .facts-section {
+        padding-top: 72px;
+        padding-bottom: 80px;
+    }
+    .facts-section__list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .hero__fact:nth-child(odd) {
-        padding-left: 0;
-        border-left: 0;
     }
     .about-section__inner,
     .quality-section,
@@ -1638,7 +1563,12 @@ summary:focus-visible {
     .site-header__inner {
         padding: 0 var(--page-padding);
     }
+    /* Long German words don't fit a phone line, so hyphenate again. */
+    .hero__title {
+        hyphens: auto;
+    }
     /* Phones: the photo sits uncovered on top and fades into the text below. */
+    .hero,
     .hero__stage {
         min-height: 0;
     }
@@ -1655,16 +1585,12 @@ summary:focus-visible {
     .hero__stage::after {
         background: linear-gradient(0deg, var(--black) 0%, rgba(17, 17, 17, 0) 45%);
     }
-    .hero__fact,
-    .hero__fact + .hero__fact {
-        padding: 20px 12px 22px 0;
+    .facts-section__list {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
-    .hero__fact:nth-child(even) {
-        padding-left: 16px;
-    }
-    .image-showcase__image {
-        aspect-ratio: auto;
-        height: 300px;
+    .fact-card {
+        padding: 22px 22px 24px;
     }
     .competency-row {
         grid-template-columns: 42px 1fr 38px;

@@ -8,7 +8,10 @@ heroTitleHighlight: "non-destructive testing."
 heroText: "Advanced testing technology, extensive expertise, and dedicated support for demanding industrial inspection tasks."
 heroImage: "../../../assets/images/home-hero.jpg"
 heroImageLabel: "Material testing in practice"
-heroFacts:
+
+factsEyebrow: "AMP Testing Technology"
+factsTitle: "Technical expertise for demanding industrial inspection tasks."
+facts:
   - value: "ISO 9001:2015"
     label: "Certified quality management"
   - value: "DGZfP"
@@ -17,11 +20,6 @@ heroFacts:
     label: "Testing methods to DIN, EN, ISO and ASME"
   - value: "On site"
     label: "or at our testing center"
-
-showcaseImage: "../../../assets/images/home-showcase.jpg"
-showcaseImageAlt: "Exterior of the AMP testing center"
-showcaseEyebrow: "AMP Testing Technology"
-showcaseCaption: "Technical expertise for demanding industrial inspection tasks."
 
 primaryCtaLabel: "Explore our capabilities"
 primaryCtaHref: "#services"

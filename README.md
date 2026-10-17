@@ -99,7 +99,7 @@ Content is Markdown with YAML frontmatter, one file per language. The schemas in
 | --- | --- | --- |
 | `title`, `description` | `<title>` and meta description | `BaseLayout` |
 | `hero*`, `primaryCta*`, `secondaryCta*` | Hero | `Hero.astro` |
-| `showcase*` | Image below the hero | `ImageShowcase.astro` |
+| `facts*`, `facts` | Key facts below the hero (cards) | `FactsSection.astro` |
 | `about*` + Markdown body | Know-how | `AboutSection.astro` |
 | `competencies*` | Competencies list | `CompetenciesSection.astro` |
 | `quality*` | Quality | `QualitySection.astro` |
@@ -200,13 +200,13 @@ Colors, spacing and sizes are CSS custom properties on `:root`, e.g. `--yellow` 
 ### Class naming
 
 - **Reusable:** `.button` (+ `--primary`, `--secondary`, `--accent`), `.eyebrow` (+ `--dark`), `.section-heading`, `.markdown-content`
-- **Component-specific:** BEM-style per component, e.g. `.site-header`, `.main-navigation__link`, `.hero__copy`, `.hero__facts`, `.competency-row__title`, `.quality-card`, `.contact-banner`
+- **Component-specific:** BEM-style per component, e.g. `.site-header`, `.main-navigation__link`, `.hero__copy`, `.fact-card`, `.competency-row__title`, `.quality-card`, `.contact-banner`
 
 New components should use the reusable classes first and add their own classes only for component-specific layout.
 
 ### File layout
 
-`global.css` is organized in commented sections: reusable, header, hero, image showcase, about, competencies, quality, contact (banner), footer, detail pages, contact page, industrial detailing, responsive. Breakpoints are 1050px, 1040px (main navigation switches to the menu button), 900px and 560px. Most media queries are in the responsive section at the end; the image showcase and the contact page keep theirs next to their styles. A `prefers-reduced-motion` query turns off smooth scrolling and transitions.
+`global.css` is organized in commented sections: reusable, header, hero, facts, about, competencies, quality, contact (banner), footer, detail pages, contact page, industrial detailing, responsive. Breakpoints are 1050px, 1040px (main navigation switches to the menu button), 900px and 560px. Most media queries are in the responsive section at the end; the contact page keeps its own next to its styles. A `prefers-reduced-motion` query turns off smooth scrolling and transitions.
 
 ### Header logo
 

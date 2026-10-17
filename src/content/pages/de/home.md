@@ -8,7 +8,10 @@ heroTitleHighlight: "zerstörungsfreie Werkstoffprüfung."
 heroText: "Moderne Prüftechnik, umfassendes Know-how und persönliche Betreuung für anspruchsvolle industrielle Prüfaufgaben."
 heroImage: "../../../assets/images/home-hero.jpg"
 heroImageLabel: "Werkstoffprüfung im Einsatz"
-heroFacts:
+
+factsEyebrow: "AMP Prüftechnik"
+factsTitle: "Technische Kompetenz für anspruchsvolle industrielle Prüfaufgaben."
+facts:
   - value: "ISO 9001:2015"
     label: "Zertifiziertes Qualitätsmanagement"
   - value: "DGZfP"
@@ -17,11 +20,6 @@ heroFacts:
     label: "Prüfverfahren nach DIN, EN, ISO und ASME"
   - value: "Vor Ort"
     label: "oder in unserem Prüfzentrum"
-
-showcaseImage: "../../../assets/images/home-showcase.jpg"
-showcaseImageAlt: "Fassade des AMP-Prüfzentrums"
-showcaseEyebrow: "AMP Prüftechnik"
-showcaseCaption: "Technische Kompetenz für anspruchsvolle industrielle Prüfaufgaben."
 
 primaryCtaLabel: "Kompetenzen ansehen"
 primaryCtaHref: "#services"

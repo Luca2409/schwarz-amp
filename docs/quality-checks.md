@@ -34,7 +34,7 @@ npm run check && npm run build && npm run test:e2e
 
 ## Content schemas
 
-`src/content.config.ts` defines a Zod schema per collection (`pages`, `competencies`, `legal`). The build and the dev server reject entries with missing or wrongly typed fields. Fields declared with `image()` (`heroImage`, `showcaseImage`, `ogImage`) also fail if the referenced file doesn't exist.
+`src/content.config.ts` defines a Zod schema per collection (`pages`, `competencies`, `legal`). The build and the dev server reject entries with missing or wrongly typed fields. Fields declared with `image()` (`heroImage`, `ogImage`) also fail if the referenced file doesn't exist.
 
 > After changing a schema, restart the dev server: its content cache can keep entries that were invalid in between.
 
