@@ -29,6 +29,8 @@ const pages = defineCollection({
 
     aboutEyebrow: z.string(),
     aboutTitle: z.string(),
+    aboutImage: image().optional(),
+    aboutImageAlt: z.string().optional(),
 
     competenciesEyebrow: z.string(),
     competenciesTitle: z.string(),

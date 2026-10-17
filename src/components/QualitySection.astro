@@ -22,15 +22,9 @@ interface Props {
 const { eyebrow, title, cardTitle, cardText, link, image, imageAlt = '' } = Astro.props;
 ---
 
-<section class:list={['quality-section', { 'quality-section--image': image }]} id="quality">
+<section class:list={['quality-section', { 'section--photo': image }]} id="quality">
   {image && (
-    <Image
-      class="quality-section__image"
-      src={image}
-      alt={imageAlt}
-      widths={[640, 960, 1440, 1920]}
-      sizes="100vw"
-    />
+    <Image class="section__photo" src={image} alt={imageAlt} widths={[640, 960, 1440, 1920]} sizes="100vw" />
   )}
   <div class="quality-section__inner">
     <div class="section-heading-block">

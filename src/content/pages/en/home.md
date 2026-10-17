@@ -28,6 +28,8 @@ secondaryCtaHref: "#contact"
 
 aboutEyebrow: "Expertise, testing, optimization"
 aboutTitle: "Expertise is our passion."
+aboutImage: "../../../assets/images/home-about.jpg"
+aboutImageAlt: "Engineer working on technical drawings across four screens"
 
 competenciesEyebrow: "Our Capabilities"
 competenciesTitle: "Inspect. Measure. Assure."

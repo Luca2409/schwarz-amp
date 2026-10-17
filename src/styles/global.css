@@ -581,6 +581,46 @@ summary:focus-visible {
 
 
 /* =========================================================
+   SECTION BACKGROUND PHOTO
+   ========================================================= */
+
+/* Dark home page sections (about, quality) with a photo behind the content. The photo fills the
+   section without changing its size; the gradient keeps the text readable. */
+.section--photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.section__photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+    filter: saturate(.8);
+}
+
+.section--photo::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(17, 17, 17, .9) 0%, rgba(17, 17, 17, .72) 50%, rgba(17, 17, 17, .5) 100%);
+    pointer-events: none;
+    content: "";
+}
+
+.section--photo > :not(.section__photo) {
+    position: relative;
+    z-index: 1;
+}
+
+/* The about text sits on the right, over the brightest part of the photo, so darken evenly. */
+.about-section.section--photo::after {
+    background: linear-gradient(90deg, rgba(17, 17, 17, .88) 0%, rgba(17, 17, 17, .8) 100%);
+}
+
+
+/* =========================================================
    ABOUT
    ========================================================= */
 
@@ -736,37 +776,7 @@ summary:focus-visible {
     color: var(--white);
 }
 
-/* Background photo; it fills the section without changing its size, and the gradient keeps
-   heading and card readable. */
-.quality-section--image {
-    position: relative;
-    overflow: hidden;
-}
-
-.quality-section__image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 60% 40%;
-    filter: saturate(.8);
-}
-
-.quality-section--image::after {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(17, 17, 17, .9) 0%, rgba(17, 17, 17, .72) 50%, rgba(17, 17, 17, .5) 100%);
-    pointer-events: none;
-    content: "";
-}
-
-.quality-section--image .quality-section__inner {
-    position: relative;
-    z-index: 1;
-}
-
-.quality-section--image .quality-card {
+.section--photo .quality-card {
     background: rgba(24, 24, 24, .82);
     backdrop-filter: blur(6px);
 }

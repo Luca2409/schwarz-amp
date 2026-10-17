@@ -28,6 +28,8 @@ secondaryCtaHref: "#contact"
 
 aboutEyebrow: "Wissen, prüfen, optimieren"
 aboutTitle: "Know-how ist unsere Leidenschaft."
+aboutImage: "../../../assets/images/home-about.jpg"
+aboutImageAlt: "Fachkraft arbeitet an technischen Zeichnungen auf vier Bildschirmen"
 
 competenciesEyebrow: "Unsere Kompetenzen"
 competenciesTitle: "Prüfen. Messen. Absichern."

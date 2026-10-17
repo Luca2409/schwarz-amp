@@ -1,15 +1,28 @@
 ---
-/** "Know-how" section (`#about`); the default slot holds the rendered Markdown body of home.md. */
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+/**
+ * "Know-how" section (`#about`), optionally on a background photo; the default slot holds the
+ * rendered Markdown body of home.md.
+ */
 interface Props {
   /** Small label above the heading. */
   eyebrow: string;
   title: string;
+  /** Optional background photo from `src/assets/`. */
+  image?: ImageMetadata;
+  /** Alt text of the background photo. */
+  imageAlt?: string;
 }
 
-const { eyebrow, title } = Astro.props;
+const { eyebrow, title, image, imageAlt = '' } = Astro.props;
 ---
 
-<section class="about-section" id="about">
+<section class:list={['about-section', { 'section--photo': image }]} id="about">
+  {image && (
+    <Image class="section__photo" src={image} alt={imageAlt} widths={[640, 960, 1440, 1920]} sizes="100vw" />
+  )}
   <div class="about-section__inner">
     <div class="section-heading-block">
       <div class="eyebrow eyebrow--dark">{eyebrow}</div>
