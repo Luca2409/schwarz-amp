@@ -9,8 +9,8 @@ order: 2
 
 ## 1. Controller
 
-[Full company name]  
-[Street and number], [Postal code, city], Germany  
+AMP GmbH  
+Gottlieb-Daimler-Str. 9, 72280 Dornstetten, Germany  
 Email: [info@amp-zfp.de](mailto:info@amp-zfp.de)  
 Phone: +49 7443 9665-19
 
@@ -48,6 +48,6 @@ Apart from Google Maps after your consent (section 5), this website does not set
 
 ## 7. Your rights
 
-You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). You can also lodge a complaint with a data protection supervisory authority, e.g. the [State Commissioner for Data Protection of Baden-Württemberg].
+You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). You can also lodge a complaint with a data protection supervisory authority, e.g. the State Commissioner for Data Protection and Freedom of Information of Baden-Württemberg.
 
 Last updated: [date]

@@ -9,8 +9,8 @@ order: 2
 
 ## 1. Verantwortlicher
 
-[Vollständiger Firmenname]  
-[Straße Hausnummer], [PLZ Ort]  
+AMP GmbH  
+Gottlieb-Daimler-Str. 9, 72280 Dornstetten  
 E-Mail: [info@amp-zfp.de](mailto:info@amp-zfp.de)  
 Telefon: +49 7443 9665-19
 
@@ -48,6 +48,6 @@ Abgesehen von Google Maps nach Ihrer Einwilligung (Abschnitt 5) setzt diese Webs
 
 ## 7. Ihre Rechte
 
-Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. beim [Landesbeauftragten für den Datenschutz Baden-Württemberg].
+Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. beim Landesbeauftragten für den Datenschutz und die Informationsfreiheit Baden-Württemberg.
 
 Stand: [Datum]

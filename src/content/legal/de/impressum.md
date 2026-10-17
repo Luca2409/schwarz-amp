@@ -5,35 +5,37 @@ description: "Impressum und Anbieterkennzeichnung von AMP Prüftechnik."
 order: 1
 ---
 
-<!-- TODO: Alle Angaben in [eckigen Klammern] ergänzen und rechtlich prüfen lassen. -->
+<!-- Angaben übernommen von https://www.amp-zfp.de/impressum.html (Stand: 17.10.2026). Vor dem Livegang rechtlich prüfen lassen. -->
 
 ## Angaben gemäß § 5 DDG
 
-[Vollständiger Firmenname inkl. Rechtsform]  
-[Straße Hausnummer]  
-[PLZ Ort]  
+AMP GmbH  
+Gottlieb-Daimler-Str. 9  
+72280 Dornstetten  
 Deutschland
 
-**Vertreten durch:** [Geschäftsführer/in]
+**Geschäftsführer:** Dipl.-Ing. Martin Schwarz
 
 ## Kontakt
 
-Telefon: +49 7443 9665-19  
+Telefon: +49 7443 9665-51  
+Telefax: +49 7443 9665-54  
 E-Mail: [info@amp-zfp.de](mailto:info@amp-zfp.de)
 
 ## Registereintrag
 
-Registergericht: [Amtsgericht]  
-Registernummer: [HRB …]
+Registergericht: Amtsgericht Stuttgart  
+Registernummer: HRB 735186
 
 ## Umsatzsteuer-ID
 
-Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [DE …]
+Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE274889538
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-[Name]  
-[Anschrift]
+Martin Schwarz  
+Gottlieb-Daimler-Str. 9  
+72280 Dornstetten
 
 ## Verbraucherstreitbeilegung
 
