@@ -58,6 +58,8 @@ const competencies = defineCollection({
     seoTitle: z.string(),
     seoDescription: z.string(),
     ogImage: image().optional(),
+    heroImage: image().optional(),
+    heroImageAlt: z.string().optional(),
   }),
 });
 

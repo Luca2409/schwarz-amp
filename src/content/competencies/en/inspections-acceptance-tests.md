@@ -6,6 +6,8 @@ teaser: "Expert support and reliable documentation."
 order: 3
 seoTitle: "Inspections, Acceptance Tests & Supplier Monitoring | AMP"
 seoDescription: "Quality, schedule and production monitoring, welding supervision and acceptance tests: AMP oversees your supply chain from planning to acceptance."
+heroImage: "../../../assets/images/engineering-produktion-plannung.jpg"
+heroImageAlt: "Three specialists reviewing a technical drawing in the production hall"
 ---
 
 ## AMP – Your Partner for Quality and Schedule Monitoring

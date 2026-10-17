@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 import { getAbsoluteLocaleUrl } from 'astro:i18n';
 
@@ -69,7 +70,18 @@ const related = (await getCompetencies(lang)).filter((other) => other.id !== ent
   <Header lang={lang} alternates={alternates} />
 
   <main>
-    <section class="detail-hero">
+    <section class={entry.data.heroImage ? 'detail-hero detail-hero--image' : 'detail-hero'}>
+      {entry.data.heroImage && (
+        <Image
+          class="detail-hero__image"
+          src={entry.data.heroImage}
+          alt={entry.data.heroImageAlt ?? ''}
+          widths={[640, 960, 1440, 1920]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
+        />
+      )}
       <div class="detail-hero__inner">
         <div class="detail-back-row">
           <a class="detail-back" href={getHomeAnchor(lang, 'services')}>{t('competency.back')}</a>

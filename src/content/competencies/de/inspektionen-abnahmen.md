@@ -6,6 +6,8 @@ teaser: "Fachliche Begleitung und zuverlässige Dokumentation."
 order: 3
 seoTitle: "Inspektionen, Abnahmen & Lieferantenüberwachung | AMP"
 seoDescription: "Qualitäts-, Termin- und Fertigungsüberwachung, Schweißaufsicht und Abnahmen: AMP überwacht Ihre Lieferkette von der Planung bis zur Abnahme."
+heroImage: "../../../assets/images/engineering-produktion-plannung.jpg"
+heroImageAlt: "Drei Fachleute besprechen eine technische Zeichnung in der Fertigungshalle"
 ---
 
 ## AMP – Ihr Partner für Qualität und Terminüberwachung

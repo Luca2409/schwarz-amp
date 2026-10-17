@@ -60,9 +60,9 @@ const { address, contactPerson } = site;
   <Header lang={lang} alternates={alternates} />
 
   <main>
-    <section class="detail-hero contact-hero">
+    <section class="detail-hero detail-hero--image">
       <Image
-        class="contact-hero__image"
+        class="detail-hero__image"
         src={teamImage}
         alt={t('contact.imageAlt')}
         widths={[640, 960, 1440, 1920]}
@@ -70,7 +70,7 @@ const { address, contactPerson } = site;
         loading="eager"
         fetchpriority="high"
       />
-      <div class="detail-hero__inner contact-hero__inner">
+      <div class="detail-hero__inner">
         <div class="eyebrow eyebrow--dark">{t('contact.eyebrow')}</div>
         <h1>{t('contact.title')}</h1>
         <p>{t('contact.intro')}</p>

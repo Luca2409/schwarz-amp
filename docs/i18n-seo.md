@@ -182,6 +182,8 @@ Helpers in `src/lib/content.ts`:
 | `seoTitle` | yes | `<title>`, ideally ≤ 60 characters, ending in `\| AMP` |
 | `seoDescription` | yes | Meta description, ideally 120–160 characters |
 | `ogImage` | no | Social preview image, path relative to the Markdown file (e.g. `../../../assets/images/x.jpg`) |
+| `heroImage` | no | Background photo of the banner at the top of the page, path relative to the Markdown file |
+| `heroImageAlt` | no | Alt text of `heroImage` |
 
 ## Localized route segments
 

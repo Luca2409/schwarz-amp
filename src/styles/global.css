@@ -1008,13 +1008,13 @@ summary:focus-visible {
     gap: 80px;
 }
 
-/* Contact hero with the team photo as background; the gradient keeps the text readable. */
-.contact-hero {
+/* Detail hero with a photo as background (contact page, competencies); the gradient keeps the text readable. */
+.detail-hero--image {
     position: relative;
     overflow: hidden;
 }
 
-.contact-hero__image {
+.detail-hero__image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -1023,7 +1023,7 @@ summary:focus-visible {
     object-position: 50% 5%;
 }
 
-.contact-hero::after {
+.detail-hero--image::after {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(17, 17, 17, .92) 0%, rgba(17, 17, 17, .7) 45%, rgba(17, 17, 17, .15) 100%);
@@ -1031,12 +1031,12 @@ summary:focus-visible {
     content: "";
 }
 
-.contact-hero__inner {
+.detail-hero--image .detail-hero__inner {
     position: relative;
     z-index: 1;
 }
 
-.contact-hero p {
+.detail-hero--image p {
     color: #ddd;
 }
 
@@ -1567,7 +1567,7 @@ summary:focus-visible {
     .detail-sidebar {
         position: static;
     }
-    .contact-hero::after {
+    .detail-hero--image::after {
         background: rgba(17, 17, 17, .72);
     }
     .about-section__inner,
