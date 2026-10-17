@@ -3,7 +3,7 @@
   ========================
   Naming:
   - reusable: .button, .eyebrow, .section-heading, .markdown-content
-  - component-specific: .hero__, .competency-row__, .quality-section, etc.
+  - component-specific: .hero__, .competency-row__, .quality-section__inner, etc.
 */
 
 :root {
@@ -585,7 +585,7 @@ summary:focus-visible {
    ========================================================= */
 
 .about-section__inner,
-.quality-section {
+.quality-section__inner {
     width: min(100%, var(--content-max));
     margin: 0 auto;
     padding: 104px var(--page-padding);
@@ -597,8 +597,7 @@ summary:focus-visible {
 
 .about-section {
     margin-top: 0;
-    /* Same as the competencies section that follows, so the two dark sections don't show a step. */
-    background: var(--black);
+    background: #181818;
     color: var(--white);
 }
 
@@ -695,16 +694,52 @@ summary:focus-visible {
     transform: translateX(3px);
 }
 
+/* White variant on the home page, so dark and light sections alternate. Yellow isn't readable
+   on white, so number and arrow turn dark. */
+.competencies-section--light {
+    background-color: var(--white);
+    color: var(--text);
+}
+
+.competencies-section--light .competency-list {
+    border-top-color: rgba(17, 17, 17, .22);
+}
+
+.competencies-section--light .competency-row {
+    border-bottom-color: var(--line);
+}
+
+.competencies-section--light .competency-row:hover {
+    background: var(--off);
+}
+
+.competencies-section--light .competency-row__number,
+.competencies-section--light .competency-row__arrow {
+    color: var(--text);
+}
+
+.competencies-section--light .competency-row__text {
+    color: var(--muted);
+}
+
+.competencies-section--light .competency-row__arrow {
+    border-color: rgba(17, 17, 17, .22);
+}
+
 
 /* =========================================================
    QUALITY
    ========================================================= */
 
 .quality-section {
+    background: var(--black);
+    color: var(--white);
+}
+
+.quality-section__inner {
     grid-template-columns: 1.05fr 0.95fr;
     gap: clamp(56px, 6vw, 80px);
     align-items: center;
-    background: var(--white);
 }
 
 .quality-card {
@@ -764,7 +799,7 @@ summary:focus-visible {
 
 .contact-banner {
     width: min( calc(100% - (var(--page-padding) * 2)), calc(var(--content-max) - (var(--page-padding) * 2)));
-    margin: 0 auto 80px;
+    margin: 80px auto;
     padding: 44px 52px;
     display: flex;
     align-items: center;
@@ -1504,7 +1539,7 @@ summary:focus-visible {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .about-section__inner,
-    .quality-section,
+    .quality-section__inner,
     .detail-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1521,7 +1556,7 @@ summary:focus-visible {
         background: rgba(17, 17, 17, .72);
     }
     .about-section__inner,
-    .quality-section {
+    .quality-section__inner {
         padding: 82px var(--page-padding);
     }
     .competencies-section {
@@ -1535,6 +1570,7 @@ summary:focus-visible {
         display: none;
     }
     .contact-banner {
+        margin-top: 52px;
         margin-bottom: 52px;
         padding: 38px 30px;
         display: block;

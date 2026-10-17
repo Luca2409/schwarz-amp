@@ -11,17 +11,19 @@ interface Props {
   entries: CollectionEntry<'competencies'>[];
   /** Section id used as anchor; `services` on the home page. */
   id?: string;
+  /** White background instead of black, so the home page sections alternate. */
+  light?: boolean;
 }
 
-const { eyebrow, title, id = 'services' } = Astro.props;
+const { eyebrow, title, id = 'services', light = false } = Astro.props;
 const entries = [...Astro.props.entries].sort(
   (a, b) => a.data.order - b.data.order
 );
 ---
 
-<section class="competencies-section" id={id}>
+<section class:list={['competencies-section', { 'competencies-section--light': light }]} id={id}>
   <div class="section-heading-block">
-    <div class="eyebrow eyebrow--dark">{eyebrow}</div>
+    <div class:list={['eyebrow', { 'eyebrow--dark': !light }]}>{eyebrow}</div>
     <h2 class="section-heading">{title}</h2>
   </div>
 
