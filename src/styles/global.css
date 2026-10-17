@@ -1034,10 +1034,6 @@ summary:focus-visible {
 .contact-hero__inner {
     position: relative;
     z-index: 1;
-    min-height: clamp(420px, 40vw, 600px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .contact-hero p {
