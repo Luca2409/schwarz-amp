@@ -6,6 +6,8 @@ teaser: "From welds to complex components."
 order: 1
 seoTitle: "Non-Destructive Testing (RT, UT, PT/MT, VT) | AMP"
 seoDescription: "Radiographic, ultrasonic, penetrant, magnetic particle and visual testing to DIN, EN, ISO and ASME – in-house or on site. Plus leak, PMI and hardness testing."
+heroImage: "../../../assets/images/hero-image.jpg"
+heroImageAlt: "Material testing in practice: a technician scans a metal component with a 3D laser scanner"
 ---
 
 ## Testing Services Tailored to Your Needs
