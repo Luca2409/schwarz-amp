@@ -412,76 +412,18 @@ summary:focus-visible {
    ========================================================= */
 
 .hero {
-    width: 100%;
-    min-height: calc(100vh - 88px);
-    min-height: calc(100svh - 88px);
-    display: grid;
-    grid-template-rows: minmax(300px, 42fr) minmax(320px, 58fr);
-    gap: 0;
-    align-items: stretch;
-    background: var(--white);
-    color: var(--black);
-}
-
-.hero__copy {
-    width: min(100%, var(--content-max));
-    margin: 0 auto;
-    min-width: 0;
-    padding: clamp(42px, 5vw, 72px) var(--page-padding);
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
-    gap: clamp(52px, 7vw, 108px);
-    align-items: center;
-}
-
-.hero__heading,
-.hero__support {
-    min-width: 0;
-}
-
-.hero__title {
-    max-width: 780px;
-    margin: 18px 0 0;
-    font-size: clamp(42px, 4vw, 60px);
-    line-height: 1.04;
-    letter-spacing: -0.025em;
-}
-
-.hero__title span {
-    background: none;
-}
-
-.hero__title::after {
-    width: 68px;
-    height: 4px;
-    margin-top: 20px;
-    display: block;
-    background: var(--yellow);
-    content: "";
-}
-
-.hero__text {
-    max-width: 540px;
-    margin: 0;
-    color: var(--muted);
-    font-size: 18px;
-    line-height: 1.75;
-}
-
-.hero__actions {
-    margin-top: 26px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.hero__visual {
-    position: relative;
-    min-width: 0;
-    min-height: 320px;
-    overflow: hidden;
     background: var(--black);
+    color: var(--white);
+}
+
+/* Photo fills the first screen (minus the facts bar); the gradient darkens the left, where the
+   text sits, and fades into the facts bar at the bottom. */
+.hero__stage {
+    position: relative;
+    min-height: clamp(560px, calc(100svh - 88px - 108px), 860px);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .hero__image {
@@ -491,8 +433,63 @@ summary:focus-visible {
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center 46%;
+    object-position: 30% 35%;
     filter: saturate(.76) contrast(1.04);
+}
+
+.hero__stage::after {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(0deg, rgba(17, 17, 17, .95) 0%, rgba(17, 17, 17, 0) 32%),
+        linear-gradient(90deg, rgba(17, 17, 17, .9) 0%, rgba(17, 17, 17, .8) 48%, rgba(17, 17, 17, .15) 75%, rgba(17, 17, 17, .05) 100%);
+    pointer-events: none;
+    content: "";
+}
+
+.hero__copy {
+    position: relative;
+    z-index: 1;
+    width: min(100%, var(--content-max));
+    margin: 0 auto;
+    padding: 120px var(--page-padding) clamp(56px, 6vw, 88px);
+}
+
+.hero__title {
+    max-width: 900px;
+    margin: 20px 0 0;
+    font-size: clamp(44px, 5.4vw, 80px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+}
+
+.hero__title span {
+    background: none;
+}
+
+.hero__title::after {
+    width: 68px;
+    height: 4px;
+    margin-top: 24px;
+    display: block;
+    background: var(--yellow);
+    content: "";
+}
+
+.hero__text {
+    max-width: 580px;
+    margin: 24px 0 0;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero__actions {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .hero .button--primary {
@@ -502,13 +499,54 @@ summary:focus-visible {
 }
 
 .hero .button--primary:hover {
-    background: var(--black);
-    border-color: var(--black);
-    color: var(--white);
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--black);
 }
 
 .hero .button--secondary {
-    color: var(--black);
+    border: 1px solid rgba(255, 255, 255, .45);
+    color: var(--white);
+    transition: border-color .16s ease;
+}
+
+.hero .button--secondary:hover {
+    border-color: var(--white);
+}
+
+.hero__facts {
+    width: min(100%, var(--content-max));
+    margin: 0 auto;
+    padding: 0 var(--page-padding);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+}
+
+.hero__fact {
+    padding: 28px 24px 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+}
+
+.hero__fact + .hero__fact {
+    padding-left: 24px;
+    border-left: 1px solid rgba(255, 255, 255, .14);
+}
+
+.hero__fact-value {
+    color: var(--yellow);
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+}
+
+.hero__fact-label {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 
@@ -1502,10 +1540,6 @@ summary:focus-visible {
    ========================================================= */
 
 @media (max-width: 1050px) {
-    .hero__copy {
-        grid-template-columns: minmax(0, 1fr) minmax(300px, .8fr);
-        gap: 44px;
-    }
     .main-navigation {
         gap: 16px;
     }
@@ -1534,24 +1568,15 @@ summary:focus-visible {
         font-size: 7px;
     }
 
-    .hero {
-        grid-template-rows: auto auto;
-        min-height: 0;
+    .hero__stage {
+        min-height: clamp(520px, calc(100svh - 76px - 160px), 720px);
     }
-    .hero__copy {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 58px var(--page-padding) 64px;
+    .hero__facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .hero__title {
-        max-width: 720px;
-    }
-    .hero__support {
-        max-width: 620px;
-    }
-    .hero__visual {
-        height: clamp(360px, 68vw, 460px);
-        min-height: 0;
+    .hero__fact:nth-child(odd) {
+        padding-left: 0;
+        border-left: 0;
     }
     .about-section__inner,
     .quality-section,
@@ -1613,8 +1638,29 @@ summary:focus-visible {
     .site-header__inner {
         padding: 0 var(--page-padding);
     }
-    .hero__visual {
-        height: 360px;
+    /* Phones: the photo sits uncovered on top and fades into the text below. */
+    .hero__stage {
+        min-height: 0;
+    }
+    .hero__copy {
+        padding-top: 300px;
+    }
+    .hero__image,
+    .hero__stage::after {
+        height: 340px;
+    }
+    .hero__image {
+        object-position: 45% 50%;
+    }
+    .hero__stage::after {
+        background: linear-gradient(0deg, var(--black) 0%, rgba(17, 17, 17, 0) 45%);
+    }
+    .hero__fact,
+    .hero__fact + .hero__fact {
+        padding: 20px 12px 22px 0;
+    }
+    .hero__fact:nth-child(even) {
+        padding-left: 16px;
     }
     .image-showcase__image {
         aspect-ratio: auto;

@@ -167,6 +167,7 @@ Helpers in `src/lib/content.ts`:
 `src/content/pages/<lang>/home.md` holds all texts of the home page sections (hero, about, showcase, competencies, quality, contact banner) plus `title` and `description` for SEO. The Markdown body is the "about" text. See the `pages` schema in `src/content.config.ts` for the full field list.
 
 - `heroImage` and `showcaseImage` are paths to `src/assets/images/`, relative to the Markdown file (e.g. `../../../assets/images/home-hero.jpg`). See [Images](#images).
+- `heroFacts` is the bar of key facts below the hero photo: a list of `value` (highlighted, e.g. `ISO 9001:2015`) and `label`. Four entries fill one row; leave it out to hide the bar.
 - The contact banner links to the contact page; there is no link field in the frontmatter.
 - `primaryCtaHref` / `secondaryCtaHref` are anchors on the same page (`#services`, `#contact`).
 

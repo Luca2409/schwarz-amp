@@ -200,7 +200,7 @@ Colors, spacing and sizes are CSS custom properties on `:root`, e.g. `--yellow` 
 ### Class naming
 
 - **Reusable:** `.button` (+ `--primary`, `--secondary`, `--accent`), `.eyebrow` (+ `--dark`), `.section-heading`, `.markdown-content`
-- **Component-specific:** BEM-style per component, e.g. `.site-header`, `.main-navigation__link`, `.hero__copy`, `.hero__visual`, `.competency-row__title`, `.quality-card`, `.contact-banner`
+- **Component-specific:** BEM-style per component, e.g. `.site-header`, `.main-navigation__link`, `.hero__copy`, `.hero__facts`, `.competency-row__title`, `.quality-card`, `.contact-banner`
 
 New components should use the reusable classes first and add their own classes only for component-specific layout.
 

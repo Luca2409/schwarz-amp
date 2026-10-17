@@ -17,6 +17,7 @@ const pages = defineCollection({
     heroText: z.string(),
     heroImage: image(),
     heroImageLabel: z.string(),
+    heroFacts: z.array(z.object({ value: z.string(), label: z.string() })).default([]),
 
     showcaseImage: image(),
     showcaseImageAlt: z.string(),
